@@ -161,12 +161,13 @@ header .nav a {
   padding: 30px 50px;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-bg);
   color: var(--color-white);
+  padding-block: 30px;
 }
 
 .btn {
