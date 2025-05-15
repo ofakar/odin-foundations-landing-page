@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-bg: #1f2937;
+  --color-light-bg: #e5e7eb;
+  --color-primary: #3882f6;
+  --color-white: #f9faf8;
+  --color-black: #1f2937;
+
+  --font-family-base: "Roboto", system-ui, sans-serif;
+  --font-size-hero-main: 3rem;
+  --font-size-hero-secondary: 1.125rem;
+  --font-size-header-link: var(--font-size-hero-secondary);
+  --font-size-info-header: 2.25rem;
+  --font-size-quote: 2.25rem;
+
+  --font-weight-hero-main: 900;
+  --font-weight-info-header: 900;
+  --font-weight-quote: 300;
+
+  --font-style-quote: italic;
+
+  --color-hero-main: var(--color-white);
+  --color-hero-secondary: var(--color-light-bg);
+  --color-header-link: var(--color-hero-secondary);
+  --color-button: var(--color-primary);
+  --color-cta-bg: var(--color-primary);
+  --color-info-header: var(--color-dark-bg);
+  --color-quote-bg: var(--color-light-bg);
+  --color-quote-font: var(--color-black);
+}
+
+body {
+  font-family: Roboto, system-ui, sans-serif;
+}
