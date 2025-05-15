@@ -38,4 +38,150 @@
 
 body {
   font-family: Roboto, system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin-inline: auto;
+}
+
+header,
+.hero,
+.info,
+.quote,
+.cta,
+.footer {
+  padding-inline: 20vw;
+  min-width: 800px;
+}
+
+header {
+  background-color: var(--color-dark-bg);
+  color: var(--color-white);
+  padding-block: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+header .nav a {
+  text-decoration: none;
+  color: var(--color-header-link);
+  padding-block: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main > * {
+  flex: 1;
+}
+
+.hero {
+  display: flex;
+  background-color: var(--color-dark-bg);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-block: 50px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 350px;
+}
+.hero-img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hero-main {
+  color: var(--color-hero-main);
+  font-size: var(--font-size-hero-main);
+  font-weight: var(--font-weight-hero-main);
+}
+.hero-secondary {
+  font-size: var(--font-size-hero-secondary);
+  color: var(--color-hero-secondary);
+}
+
+.info {
+  margin-bottom: 50px;
+}
+.info-header {
+  text-align: center;
+  margin-block: 30px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.card {
+  text-align: center;
+  width: 150px;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  padding-block: 50px;
+  background-color: var(--color-quote-bg);
+}
+.quote-text {
+  color: var(--color-quote-font);
+  font-style: var(--font-style-quote);
+  font-weight: var(--font-weight-quote);
+  font-size: var(--font-size-quote);
+}
+#quote-cite {
+  font-weight: bold;
+  text-align: end;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-cta-bg);
+  color: var(--color-white);
+  margin: 70px;
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-bg);
+  color: var(--color-white);
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  font: inherit;
+  padding: 5px 30px;
+  border-width: 2px;
+  border-style: solid;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.hero-btn {
+  border-color: var(--color-primary);
+}
+.cta-btn {
+  border-color: var(--color-white);
 }
